@@ -4,6 +4,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9EW10BJGW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-R9EW10BJGW");</script>
 <meta charset="UTF-8">
+<link rel="manifest" href="/salaryslip/manifest.json">
+<meta name="theme-color" content="#0ea5e9">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salary Slip Generator — Free Payslip Maker India 2026</title>
 <meta name="description" content="Free salary slip generator India. Create professional payslip with earnings, deductions, PF, TDS. Download or print PDF instantly. No signup needed.">
@@ -357,5 +360,6 @@ const now = new Date();
 document.getElementById('pay-period').value = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2,'0');
 render();
 </script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/salaryslip/sw.js");</script>
 </body>
 </html>
